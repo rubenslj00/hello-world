@@ -15,7 +15,7 @@ pipeline {
         stage('Build, tag and push image to docker hub') {
             steps {
                 sh "echo building image"
-                sh "docker build -t web_application ."
+                sh "sudo docker build -t web_application ."
             }
         }
     }
