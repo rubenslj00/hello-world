@@ -16,6 +16,12 @@ pipeline {
             steps {
                 sh "echo building image"
                 sh "sudo docker build -t web_application ."
+                
+                sh "echo tagging image"
+                sh "sudo docker tag web_application:latest tpouche94/web_application:latest"
+                
+                sh "pushing image to docker hub"
+                sh "sudo docker push tpouche94/web_application:latest"
             }
         }
     }
