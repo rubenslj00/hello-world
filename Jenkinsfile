@@ -20,7 +20,7 @@ pipeline {
                 sh "echo tagging image"
                 sh "sudo docker tag web_application:latest tpouche94/web_application:latest"
                 
-                sh "pushing image to docker hub"
+                sh "echo pushing image to docker hub"
                 sh "sudo docker push tpouche94/web_application:latest"
             }
         }
