@@ -12,9 +12,9 @@ pipeline {
                 sh "mvn -f pom.xml clean install"
             }
         }
-        stage('Deploy') {
+        stage('Move war file to docker') {
             steps {
-                echo 'Deploying....'
+                sh "cp webapp/target/*.war ."
             }
         }
     }
