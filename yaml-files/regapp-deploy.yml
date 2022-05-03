@@ -1,12 +1,12 @@
-apiVersion: apps/v1 
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: web-regapp
-  labels: 
+  labels:
      app: webapp
 
 spec:
-  replicas: 2 
+  replicas: 2
   selector:
     matchLabels:
       app: webapp
