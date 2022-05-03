@@ -25,7 +25,9 @@ pipeline {
             }
         }
         stage("Deploy application to kubernetes cluster") {
-            sh "kubectl apply -f yaml-files"
+            steps {
+                sh "kubectl apply -f yaml-files"
+            }
         }
     }
 }
