@@ -29,5 +29,10 @@ pipeline {
                 sh "kubectl apply -f yaml-files"
             }
         }
+        stage("echo Update deployment with new pods if image is updated in dockerhub") {
+            steps {
+                sh "kubectl rollout restart deployment.apps/web-regapp"
+            }
+        }
     }
 }
