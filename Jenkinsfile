@@ -24,5 +24,8 @@ pipeline {
                 sh "sudo docker push tpouche94/web_application:latest"
             }
         }
+        stage("Deploy application to kubernetes cluster") {
+            sh "kubectl apply -f yaml-files"
+        }
     }
 }
