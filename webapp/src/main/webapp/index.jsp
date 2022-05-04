@@ -1,6 +1,6 @@
 <form action="action_page.php">
   <div class="container">
-    <h1>Good Morning DAN & NICK , Welcome to my CloudBees Demo</h1>
+    <h1>Good Morning Guys , Welcome to my CloudBees Demo</h1>
     <p>Please fill in this form to create an account.</p>
     <hr>
      
@@ -31,7 +31,7 @@
     <p>Already have an account? <a href="#">Sign in</a>.</p>
   </div>
 
-   <h1> Thank you so much CloudBees.!!!  </h1>
+   <h1> Thank you CloudBees.!!!  </h1>
 
   
 </form>
